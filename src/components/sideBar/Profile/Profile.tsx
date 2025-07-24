@@ -1,4 +1,4 @@
-import profileIcon from '/public/assets/icons/profile.png';
+import profileIcon from '../../../assets/icons/profile.png';
 import clsx from "clsx";
 
 import type {SidebarStateProps} from "../types.ts";

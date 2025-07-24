@@ -1,7 +1,7 @@
 import * as React from "react";
 import clsx from "clsx";
 
-import playIcon from '/public/assets/icons/play.svg'
+import playIcon from '../../assets/icons/play.svg'
 import styles from './playOrInfoButton.module.css';
 
 type ButtonType = "play" | "more info";

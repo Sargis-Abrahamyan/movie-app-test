@@ -1,8 +1,8 @@
-import  homeIcon from '/public/assets/icons/Group 46.png';
-import  watchLaterIcon from '/public/assets/icons/Group 47.png';
-import  genresIcon from '/public/assets/icons/Group 53.png';
-import  moviesIcon from '/public/assets/icons/Group 54.png';
-import  twShowsIcon from '/public/assets/icons/Group 56.png';
+import  homeIcon from '../../../assets/icons/Group 46.png';
+import  watchLaterIcon from '../../../assets/icons/Group 47.png';
+import  genresIcon from '../../../assets/icons/Group 53.png';
+import  moviesIcon from '../../../assets/icons/Group 54.png';
+import  twShowsIcon from '../../../assets/icons/Group 56.png';
 import type {SidebarMenuItem} from "../types.ts";
 
 

@@ -153,35 +153,3 @@ audio {
     color: var(--unnamed-color-ffffff);
 }
 
-
-/*@theme {*/
-/*    --font-tajawal: 'Tajawal', 'sans-serif';*/
-
-/*    --text-24: 1.5rem;*/
-/*    --text-30: 1.875rem;*/
-/*    --text-32: 2rem;*/
-/*    --text-36: 2.25rem;*/
-
-/*    --color-black: #040404;*/
-/*    --color-white: #F1F1F1;*/
-/*    --color-gray: #858688;*/
-/*    --color-blue: transparent linear-gradient(128deg, #2727F5 0%, #001671 100%) 0% 0% no-repeat padding-box;*/
-/*    --color-dark-desaturated-blue: #3b486d;*/
-
-/*    --spacing-12: 0.75rem;*/
-/*    --spacing-15: 0.9375rem;*/
-/*    --spacing-16: 1rem;*/
-/*    --spacing-18: 1.125rem;*/
-/*    --spacing-24: 1.5rem;*/
-/*    --spacing-26: 1.625rem;*/
-/*    --spacing-36: 2.25rem;*/
-/*    --spacing-38: 2.375rem;*/
-/*    --spacing-53: 3.4375rem;*/
-/*    --spacing-55: 3.4375rem;*/
-/*    --spacing-60: 3.75rem;*/
-/*    --spacing-65: 4.0625rem;*/
-/*    --spacing-180: 11.25rem;*/
-/*    --spacing-215: 13.4375rem;*/
-/*}*/
-
-
