@@ -1,0 +1,187 @@
+@import "tailwindcss";
+
+*,
+::after,
+::before,
+::backdrop,
+::file-selector-button {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ol,
+ul,
+menu {
+    list-style: none;
+}
+
+img,
+svg,
+video,
+audio {
+    display: block;
+    vertical-align: middle;
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    src: url("/public/fonts/Tajawal-Regular.ttf") format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    src: url("/public/fonts/Tajawal-Medium.ttf") format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    src: url("/public/fonts/Tajawal-Bold.ttf") format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    /* Colors: */
+    --unnamed-color-040404: #040404;
+    --unnamed-color-f1f1f1: #F1F1F1;
+    --unnamed-color-3b486d: #3B486D;
+    --unnamed-color-858688: #858688;
+    --unnamed-color-ffffff: #FFFFFF;
+
+    /* Font/text values */
+    --unnamed-font-family-tajawal: Tajawal;
+    --unnamed-font-style-normal: normal;
+    --unnamed-font-weight-normal: normal;
+    --unnamed-font-weight-bold: bold;
+    --unnamed-font-weight-medium: medium;
+    --unnamed-font-size-24: 24px;
+    --unnamed-font-size-32: 32px;
+    --unnamed-font-size-36: 36px;
+    --unnamed-font-size-92: 92px;
+    --unnamed-character-spacing-0: 0px;
+    --unnamed-character-spacing--0-24: -0.24px;
+    --unnamed-character-spacing-4-8: 4.8px;
+    --unnamed-character-spacing--0-32: -0.32px;
+    --unnamed-line-spacing-30: 30px;
+    --unnamed-line-spacing-38: 38px;
+    --unnamed-line-spacing-42: 42px;
+    --unnamed-line-spacing-43: 43px;
+    --unnamed-text-transform-uppercase: uppercase;
+}
+
+/* Character Styles */
+.unnamed-character-style-1 {
+    font-family: var(--unnamed-font-family-tajawal);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-92);
+    line-height: var(--unnamed-line-spacing-42);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-ffffff);
+    text-transform: var(--unnamed-text-transform-uppercase);
+}
+.unnamed-character-style-2 {
+    font-family: var(--unnamed-font-family-tajawal);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-36);
+    line-height: var(--unnamed-line-spacing-43);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-ffffff);
+}
+.unnamed-character-style-3 {
+    font-family: var(--unnamed-font-family-tajawal);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-medium);
+    font-size: var(--unnamed-font-size-32);
+    line-height: var(--unnamed-line-spacing-38);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-ffffff);
+}
+.unnamed-character-style-4 {
+    font-family: var(--unnamed-font-family-tajawal);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-32);
+    line-height: var(--unnamed-line-spacing-30);
+    letter-spacing: var(--unnamed-character-spacing--0-32);
+    color: var(--unnamed-color-ffffff);
+}
+.unnamed-character-style-5 {
+    font-family: var(--unnamed-font-family-tajawal);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-32);
+    line-height: var(--unnamed-line-spacing-42);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-ffffff);
+}
+.unnamed-character-style-6 {
+    font-family: var(--unnamed-font-family-tajawal);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-24);
+    line-height: var(--unnamed-line-spacing-42);
+    letter-spacing: var(--unnamed-character-spacing-4-8);
+    color: var(--unnamed-color-858688);
+    text-transform: var(--unnamed-text-transform-uppercase);
+}
+.unnamed-character-style-7 {
+    font-family: var(--unnamed-font-family-tajawal);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-24);
+    line-height: var(--unnamed-line-spacing-30);
+    letter-spacing: var(--unnamed-character-spacing--0-24);
+    color: var(--unnamed-color-ffffff);
+}
+
+
+/*@theme {*/
+/*    --font-tajawal: 'Tajawal', 'sans-serif';*/
+
+/*    --text-24: 1.5rem;*/
+/*    --text-30: 1.875rem;*/
+/*    --text-32: 2rem;*/
+/*    --text-36: 2.25rem;*/
+
+/*    --color-black: #040404;*/
+/*    --color-white: #F1F1F1;*/
+/*    --color-gray: #858688;*/
+/*    --color-blue: transparent linear-gradient(128deg, #2727F5 0%, #001671 100%) 0% 0% no-repeat padding-box;*/
+/*    --color-dark-desaturated-blue: #3b486d;*/
+
+/*    --spacing-12: 0.75rem;*/
+/*    --spacing-15: 0.9375rem;*/
+/*    --spacing-16: 1rem;*/
+/*    --spacing-18: 1.125rem;*/
+/*    --spacing-24: 1.5rem;*/
+/*    --spacing-26: 1.625rem;*/
+/*    --spacing-36: 2.25rem;*/
+/*    --spacing-38: 2.375rem;*/
+/*    --spacing-53: 3.4375rem;*/
+/*    --spacing-55: 3.4375rem;*/
+/*    --spacing-60: 3.75rem;*/
+/*    --spacing-65: 4.0625rem;*/
+/*    --spacing-180: 11.25rem;*/
+/*    --spacing-215: 13.4375rem;*/
+/*}*/
+
+

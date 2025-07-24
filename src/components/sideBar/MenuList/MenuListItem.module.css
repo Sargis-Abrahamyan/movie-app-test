@@ -1,0 +1,72 @@
+/* Index item wrapper */
+.sidebar__item {
+    width: 100%;
+}
+
+/* Base styles for the nav link */
+.sidebar__link {
+    display: flex;
+    align-items: center;
+    padding-left: 28px;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-36) / var(--unnamed-line-spacing-43) var(--unnamed-font-family-tajawal);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-f1f1f1);
+    white-space: nowrap;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+/* When sidebar is open */
+.linkOpen {
+    width: 312px;
+    column-gap: 52px;
+    border-radius: 12px;
+}
+
+/* When sidebar is closed */
+.linkClosed {
+    width: 82px;
+    border-radius: 41px;
+    column-gap: 0;
+}
+
+/* Icon styles */
+.sidebar__icon {
+    width: 26px;
+    height: 29px;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Label base style */
+.sidebar__label {
+    display: inline-block;
+    opacity: 1;
+    max-width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: opacity 0.3s ease, max-width 0.3s ease;
+}
+
+/* Collapsed label when sidebar is closed */
+.collapsedLabel {
+    opacity: 0;
+    max-width: 0;
+    pointer-events: none;
+}
+
+/* Active and inactive states */
+.active {
+    background: var(--unnamed-color-3b486d);
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-36)/var(--unnamed-line-spacing-43) var(--unnamed-font-family-tajawal);
+    height: 72px;
+}
+
+.linkClosed.active {
+    height: 82px;
+}
+
+.inactive {
+    background: transparent;
+}

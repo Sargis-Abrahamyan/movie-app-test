@@ -1,0 +1,10 @@
+.sidebar__navigation {
+    flex: 1;
+}
+
+.sidebar__list {
+    display: inline-flex;
+    flex-direction: column;
+    row-gap: 37px;
+
+}

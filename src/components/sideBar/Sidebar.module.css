@@ -1,0 +1,23 @@
+
+.sideBar {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 157px;
+    height: 100vh;
+    padding-inline: 38px;
+    padding-top: 60px;
+    padding-bottom: 65px;
+    background: transparent linear-gradient(90deg, var(--unnamed-color-040404) 0%, #040404FA 21%, #04040400 100%) 0% 0% no-repeat padding-box;
+    overflow: hidden;
+    transition: width 0.3s ease-in-out;
+}
+
+.open {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+

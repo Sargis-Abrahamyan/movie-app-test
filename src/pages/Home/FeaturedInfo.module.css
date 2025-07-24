@@ -1,0 +1,40 @@
+.featuredInfo{
+    flex:1;
+}
+
+.featuredInfo__category {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-42) var(--unnamed-font-family-tajawal);
+    letter-spacing: var(--unnamed-character-spacing-4-8);
+    color: var(--unnamed-color-858688);
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.featuredInfo__releaseInfo {
+    display: inline-flex;
+    column-gap: 32px;
+    margin-top: 12px;
+    margin-bottom: 16px;
+}
+
+.featuredInfo__separator  {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 30px/var(--unnamed-line-spacing-42) var(--unnamed-font-family-tajawal);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-f1f1f1);
+    text-align: left;
+}
+
+.featuredInfo__description {
+    max-width: 777px;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-32)/40px var(--unnamed-font-family-tajawal);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-f1f1f1);
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.featuredInfo__actions {
+    display: flex;
+    column-gap: 18px;
+}
