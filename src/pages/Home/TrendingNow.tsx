@@ -16,6 +16,7 @@ const TrendingNow = ({
                      }: TrendingNowProps) => {
     return (
         <div className={styles['home__slider--container']}>
+            <h3 className={styles['home__block--title']}>Trending Now</h3>
             <Swiper
                 slidesPerView={8}
                 spaceBetween={20}

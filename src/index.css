@@ -1,37 +1,4 @@
-@import "tailwindcss";
-
-*,
-::after,
-::before,
-::backdrop,
-::file-selector-button {
-    margin: 0;
-    padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-size: inherit;
-    font-weight: inherit;
-}
-
-ol,
-ul,
-menu {
-    list-style: none;
-}
-
-img,
-svg,
-video,
-audio {
-    display: block;
-    vertical-align: middle;
-}
+@import "./preflight.css";
 
 @font-face {
     font-family: 'Tajawal';

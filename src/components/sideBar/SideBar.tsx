@@ -11,15 +11,19 @@ const SideBar = (): React.JSX.Element => {
     return (
         <aside
             className={clsx(styles.sideBar, {[styles.open]: isOpen})}
-            onMouseEnter={handleOpenSidebar}
-            onMouseLeave={handleCloseSidebar}
             aria-expanded={isOpen}
             aria-label="Index menu"
         >
-            <Profile isOpen={isOpen}/>
-            <SearchBar isOpen={isOpen}/>
-            <MenuList isOpen={isOpen}/>
-            {isOpen && <Footer/>}
+           <div
+               onMouseEnter={handleOpenSidebar}
+               onMouseLeave={handleCloseSidebar}
+               className={styles.sideBar__content}
+           >
+               <Profile isOpen={isOpen}/>
+               <SearchBar isOpen={isOpen}/>
+               <MenuList isOpen={isOpen}/>
+               {isOpen && <Footer/>}
+           </div>
         </aside>
     );
 };
