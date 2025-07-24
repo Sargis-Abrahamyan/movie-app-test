@@ -3,7 +3,7 @@ import {Outlet} from "react-router-dom";
 
 const RootRoutes = () => {
     return (
-        <div>
+        <>
             <SideBar/>
             <Outlet/>
         </div>
