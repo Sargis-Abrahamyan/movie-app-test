@@ -6,7 +6,7 @@ const RootRoutes = () => {
         <>
             <SideBar/>
             <Outlet/>
-        </div>
+        </>
     );
 };
 
