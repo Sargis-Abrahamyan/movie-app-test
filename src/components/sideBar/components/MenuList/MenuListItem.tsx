@@ -2,7 +2,7 @@ import React from 'react';
 import {NavLink} from 'react-router-dom';
 import clsx from 'clsx';
 
-import type {SidebarMenuItem, SidebarStateProps} from '../types.ts';
+import type {SidebarMenuItem, SidebarStateProps} from '../../types/types.ts';
 import styles from './MenuListItem.module.css';
 
 interface MenuListItemProps extends SidebarMenuItem, SidebarStateProps {

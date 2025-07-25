@@ -1,6 +1,6 @@
-import {formatDuration} from '../../utils/formatDuration.ts';
-import PlayOrInfoButton from "../../components/playOrInfoButton/PlayOrInfoButton.tsx";
-import type {AllMoviesType} from "../../types/movieTypes.ts";
+import type { AllMoviesType } from '../../../../types/movieTypes.ts';
+import {formatDuration} from '../../../../utils/formatDuration.ts';
+import PlayOrInfoButton from './playOrInfoButton/PlayOrInfoButton.tsx';
 import styles from './FeaturedInfo.module.css';
 
 type FeaturedInfoProps = Pick<

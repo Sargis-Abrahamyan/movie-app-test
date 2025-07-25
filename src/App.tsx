@@ -7,12 +7,12 @@ import {
 import Home from './pages/Home/Home.tsx';
 import Movies from "./pages/Movies/Movies.tsx";
 import RootRoutes from "./routes/RootRoutes.tsx";
-import ErrorPage from "./pages/ErrorPage.tsx";
+import Error from "./pages/Error/Error.tsx";
 
 
 const router = createBrowserRouter(
     createRoutesFromElements(
-        <Route path='/' element={<RootRoutes/>} errorElement={<ErrorPage/>}>
+        <Route path='/' element={<RootRoutes/>} errorElement={<Error/>}>
             <Route index element={<Home/>}/>
             <Route path='/movies' element={<Movies/>}/>
         </Route>

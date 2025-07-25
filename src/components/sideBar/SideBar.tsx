@@ -2,7 +2,7 @@ import React from "react";
 import clsx from "clsx";
 
 import {Footer, MenuList, SearchBar, Profile} from './'
-import useSidebarHoverToggle from "./useSidebarHoverToggle.ts";
+import useSidebarHoverToggle from "./hooks/useSidebarHoverToggle.ts";
 import styles from './Sidebar.module.css';
 
 const SideBar = (): React.JSX.Element => {

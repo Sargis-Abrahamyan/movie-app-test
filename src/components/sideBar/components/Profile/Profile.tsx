@@ -1,7 +1,7 @@
-import profileIcon from '../../../assets/icons/profile.png';
+import profileIcon from '../../../../assets/icons/profile.png';
 import clsx from "clsx";
 
-import type {SidebarStateProps} from "../types.ts";
+import type {SidebarStateProps} from "../../types/types.ts";
 import styles from "./Profile.module.css";
 
 const Profile = ({isOpen}: SidebarStateProps) => {

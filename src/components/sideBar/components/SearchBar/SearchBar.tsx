@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import styles from "./SearchBar.module.css";
-import searchIcon from '../../..//assets/icons/ICON-Search.png';
-import type {SidebarStateProps} from "../types.ts";
+import searchIcon from '../../../../assets/icons/ICON-Search.png';
+import type {SidebarStateProps} from "../../types/types.ts";
 
 const SearchBar = ({isOpen}: SidebarStateProps) => {
     return (

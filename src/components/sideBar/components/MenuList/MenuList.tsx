@@ -2,7 +2,7 @@ import React from "react";
 
 import {sideBarMenuList} from './data.ts';
 import MenuListItem from "./MenuListItem.tsx";
-import type {SidebarStateProps} from "../types.ts";
+import type {SidebarStateProps} from "../../types/types.ts";
 import styles from './MenuList.module.css';
 
 const MenuList = ({isOpen}:SidebarStateProps): React.JSX.Element => {

@@ -1,9 +1,9 @@
-import  homeIcon from '../../../assets/icons/Group 46.png';
-import  watchLaterIcon from '../../../assets/icons/Group 47.png';
-import  genresIcon from '../../../assets/icons/Group 53.png';
-import  moviesIcon from '../../../assets/icons/Group 54.png';
-import  twShowsIcon from '../../../assets/icons/Group 56.png';
-import type {SidebarMenuItem} from "../types.ts";
+import  homeIcon from '../../../../assets/icons/Group 46.png';
+import  watchLaterIcon from '../../../../assets/icons/Group 47.png';
+import  genresIcon from '../../../../assets/icons/Group 53.png';
+import  moviesIcon from '../../../../assets/icons/Group 54.png';
+import  twShowsIcon from '../../../../assets/icons/Group 56.png';
+import type {SidebarMenuItem} from "../../types/types.ts";
 
 
 export const sideBarMenuList : SidebarMenuItem[] = [

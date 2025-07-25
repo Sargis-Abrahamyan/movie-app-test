@@ -1,13 +1,17 @@
-import React, {useCallback, lazy, Suspense} from "react";
+import React, {useCallback, lazy, Suspense} from 'react';
 
-import FeaturedInfo from "./FeaturedInfo";
-import TrendingNow from "./TrendingNow";
-import useFeaturedMovies from "./useFeaturedMovies";
-import useVideoPlayback from "./useVideoPlayback";
-import type {AllMoviesType} from "../../types/movieTypes";
-import styles from "./Home.module.css";
+import {
+    FeaturedInfo,
+    TrendingNow,
+    useFeaturedMovies,
+    useVideoPlayback
+} from "./";
+import type {AllMoviesType} from '../../types/movieTypes';
+import styles from './Home.module.css';
 
-const HomeVideoBackground = lazy(() => import("./HomeVideoBackground"));
+const HomeVideoBackground = lazy(
+    () => import('./components/HomeVideoBackground/HomeVideoBackground'),
+);
 
 const Home = (): React.JSX.Element | null => {
     const {activeMovie, trendingMovies, updateFeatured} = useFeaturedMovies();
@@ -18,7 +22,7 @@ const Home = (): React.JSX.Element | null => {
             updateFeatured(movie);
             playMovieWithDelay(movie);
         },
-        [updateFeatured, playMovieWithDelay]
+        [updateFeatured, playMovieWithDelay],
     );
 
     if (!activeMovie) return null;
