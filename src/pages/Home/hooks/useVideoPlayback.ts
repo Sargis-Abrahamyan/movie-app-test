@@ -1,14 +1,12 @@
-import {useState, useEffect, useCallback, useRef} from "react";
+import { useState, useEffect, useCallback, useRef } from 'react';
 
-import type {AllMoviesType} from "../../types/movieTypes";
+import type { AllMoviesType } from '../../../types/movieTypes';
 
 const useVideoPlayback = (activeMovie: AllMoviesType | null) => {
     const [playVideo, setPlayVideo] = useState(false);
     const [backgroundVideoUrl, setBackgroundVideoUrl] = useState<string | null>(null);
     const timeoutRef = useRef<number | null>(null);
 
-
-    console.log(activeMovie, 'activeMovie')
     const playMovieWithDelay = useCallback((movie: AllMoviesType | null) => {
         if (timeoutRef.current) {
             clearTimeout(timeoutRef.current);
@@ -23,6 +21,7 @@ const useVideoPlayback = (activeMovie: AllMoviesType | null) => {
     }, []);
 
     const savedId = sessionStorage.getItem("lastSeenMovieId");
+
     useEffect(() => {
         if (savedId && activeMovie?.Id) {
             playMovieWithDelay(activeMovie);

@@ -1,8 +1,9 @@
-import type {AllMoviesType} from "../../types/movieTypes.ts";
+import type { AllMoviesType } from '../../../../types/movieTypes';
 import  styles from "./HomeVideoBackground.module.css";
 
 const HomeVideoBackground = ({VideoUrl}: Pick<AllMoviesType, 'VideoUrl'>) => {
     if (!VideoUrl) return null;
+
     return (
         <video
             key={VideoUrl}
@@ -12,7 +13,7 @@ const HomeVideoBackground = ({VideoUrl}: Pick<AllMoviesType, 'VideoUrl'>) => {
             loop
             playsInline
         >
-            <source src={VideoUrl} type="video/mp4"/>
+            <source src={VideoUrl} type='video/mp4'/>
         </video>
     );
 };

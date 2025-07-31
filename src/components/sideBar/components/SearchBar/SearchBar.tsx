@@ -1,9 +1,11 @@
-import clsx from "clsx";
-import styles from "./SearchBar.module.css";
-import searchIcon from '../../../../assets/icons/ICON-Search.png';
-import type {SidebarStateProps} from "../../types/types.ts";
+import type { JSX } from 'react';
+import clsx from 'clsx';
 
-const SearchBar = ({isOpen}: SidebarStateProps) => {
+import searchIcon from '../../../../assets/icons/ICON-Search.png';
+import type { SidebarStateProps } from '../../types/types.ts';
+import styles from './SearchBar.module.css';
+
+const SearchBar = ({isOpen}: SidebarStateProps):JSX.Element => {
     return (
         <div className={clsx(styles.sidebar__search, { [styles.collapsed]: !isOpen })}>
             <div className={styles['sidebar__search--block']}>

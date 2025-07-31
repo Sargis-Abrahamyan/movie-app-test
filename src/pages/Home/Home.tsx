@@ -1,4 +1,5 @@
-import React, {useCallback, lazy, Suspense} from 'react';
+import {useCallback, lazy, Suspense} from 'react';
+import type { JSX } from 'react';
 
 import {
     FeaturedInfo,
@@ -13,7 +14,7 @@ const HomeVideoBackground = lazy(
     () => import('./components/HomeVideoBackground/HomeVideoBackground'),
 );
 
-const Home = (): React.JSX.Element | null => {
+const Home = (): JSX.Element | null => {
     const {activeMovie, trendingMovies, updateFeatured} = useFeaturedMovies();
     const {playVideo, backgroundVideoUrl, playMovieWithDelay} = useVideoPlayback(activeMovie);
 

@@ -2,7 +2,7 @@ import { memo } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
-import type { AllMoviesType } from '../../../../types/movieTypes.ts';
+import type { AllMoviesType } from '../../../../types/movieTypes';
 import styles from './TrendingNow.module.css';
 
 interface TrendingNowProps {

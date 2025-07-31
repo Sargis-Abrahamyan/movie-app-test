@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
+
 import type { AllMoviesType } from '../../../types/movieTypes.ts';
 import useMovieFetch from './useMovieFetch.ts';
 

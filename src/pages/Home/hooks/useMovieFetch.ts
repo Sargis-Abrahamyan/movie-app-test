@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+
 import { fetchMovies } from '../../../services/fetchMovies.service.ts';
 import type { MovieResponse } from '../../../types/movieTypes.ts';
 

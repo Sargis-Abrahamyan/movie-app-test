@@ -1,4 +1,4 @@
-import React from 'react';
+import type {JSX} from 'react';
 import {NavLink} from 'react-router-dom';
 import clsx from 'clsx';
 
@@ -8,7 +8,7 @@ import styles from './MenuListItem.module.css';
 interface MenuListItemProps extends SidebarMenuItem, SidebarStateProps {
 }
 
-const MenuListItem = ({path, label, icon, isOpen}: Omit<MenuListItemProps, 'id'>): React.JSX.Element => {
+const MenuListItem = ({path, label, icon, isOpen}: Omit<MenuListItemProps, 'id'>): JSX.Element => {
     return (
         <li className={styles.sidebar__item}>
             <NavLink
