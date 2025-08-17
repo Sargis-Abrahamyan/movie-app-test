@@ -1,19 +1,18 @@
-import type {JSX} from 'react';
-import {NavLink} from 'react-router-dom';
-import clsx from 'clsx';
+import { memo, type JSX } from "react";
+import { NavLink } from "react-router-dom";
+import clsx from "clsx";
 
-import type {SidebarMenuItem, SidebarStateProps} from '../../types/types.ts';
-import styles from './MenuListItem.module.css';
+import type { SidebarMenuItem, SidebarStateProps } from "../../types/types.ts";
+import styles from "./MenuListItem.module.css";
 
-interface MenuListItemProps extends SidebarMenuItem, SidebarStateProps {
-}
+type MenuListItemProps = SidebarMenuItem & SidebarStateProps;
 
-const MenuListItem = ({path, label, icon, isOpen}: Omit<MenuListItemProps, 'id'>): JSX.Element => {
+const MenuListItem = ({ path, label, icon, isOpen }: Omit<MenuListItemProps, "id">): JSX.Element => {
     return (
         <li className={styles.sidebar__item}>
             <NavLink
                 to={path}
-                className={({isActive}) =>
+                className={({ isActive }) =>
                     clsx(styles.sidebar__link, {
                         [styles.active]: isActive,
                         [styles.inactive]: !isActive,
@@ -23,11 +22,12 @@ const MenuListItem = ({path, label, icon, isOpen}: Omit<MenuListItemProps, 'id'>
                 }
                 aria-label={label}
             >
-                <img src={icon} alt={`${label} icon`} className={styles.sidebar__icon}/>
-                <span className={clsx(styles.sidebar__label, {
-                    [styles.collapsedLabel]: !isOpen,
-                })}
-                      aria-hidden={isOpen}
+                <img src={icon} alt={`${label} icon`} className={styles.sidebar__icon} />
+                <span
+                    className={clsx(styles.sidebar__label, {
+                        [styles.collapsedLabel]: !isOpen,
+                    })}
+                    aria-hidden={isOpen}
                 >
                     {label}
                 </span>
@@ -36,4 +36,11 @@ const MenuListItem = ({path, label, icon, isOpen}: Omit<MenuListItemProps, 'id'>
     );
 };
 
-export default MenuListItem;
+export default memo(MenuListItem, (prev, next) => {
+    return (
+        prev.path === next.path &&
+        prev.label === next.label &&
+        prev.icon === next.icon &&
+        prev.isOpen === next.isOpen
+    );
+});

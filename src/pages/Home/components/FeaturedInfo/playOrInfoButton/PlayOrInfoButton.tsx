@@ -15,7 +15,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 const PlayOrInfoButton = ({text, variant, ...rest}: ButtonProps): React.JSX.Element => {
     return (
       <button className={clsx(styles.baseButton, styles[variant])} {...rest}>
-        {variant === 'playButton' && <img src={playIcon} alt='play' width={24} height={24} />}
+        {variant === 'playButton' && <img src={playIcon} alt={text} width={24} height={24} />}
         {text}
       </button>
     );
